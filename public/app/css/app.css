@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/* Dashboard  =====================================*/
+
+.fullscreen {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.col-navigation {
+    background-color: rgb(250, 250, 250);
+}
+
+.menu-list {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.menu-list a {
+    background-color: transparent !important;
+    border: none !important;
+    text-align: center;
+    margin-bottom: 3vh !important;
+    font-size: 2vh;
+}
+
+.menu-list a svg {
+    width: 1.5em;
+    height: 1.5em;
+    transition: .1s ease-in-out;
+}
+
+.menu-list a:hover svg{
+    transform: scale(1.1);
+    color:rgb(41, 41, 41);
+}
+
+.active-menu svg{
+    transition: .3s ease-in-out !important;
+    transform: scale(1.2);
+    color: rgba(255,68,0,1);
+}
+
+.active-menu::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(255,68,0,1);
+    height: .5vh;
+    width: .5vh;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+}
+
+.active-menu:hover svg{
+    transform: scale(1.2) !important;
+    color: rgba(255,68,0,1) !important;
+}
+
+.col-content {
+    background-color: rgb(253, 253, 253);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 2em;
+    box-shadow: -15px 0px 15px -20px rgba(0, 0, 0, 0.137);
+}
+
+.important_orange{
+    box-shadow: 0px 15px 15px -15px rgb(255, 102, 0);
+    background: linear-gradient(125deg, rgba(255,68,0,1) 0%, rgba(255,154,0,1) 100%);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.important{
+    background-color: white;
+    border: solid 1px rgba(250, 250, 250, 1);
+    box-shadow: 0px 15px 15px -15px rgba(0, 0, 0, 0.137);
+    border-radius: 20px;
+    padding: 1em;
+    height: 110% !important;
+    overflow: hidden;
+}
+
+/* PEDIDOS */
+
+.filters-pedidos{
+
+}
+
+.filter-select{
+    
+}
+
+.search-filter{
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+
+.btn-novo-pedido{
+    background-color: rgb(255, 102, 0);
+    color: white;
+    border: none;
+    box-shadow: 0px 10px 15px -15px rgb(255, 102, 0);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    transition: all .1s ease;
+    outline: none !important;
+}
+
+.btn-novo-pedido:hover{
+
+    transform: scale(1.03);
+}
+
+.modal-body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.modal-content{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90vw !important;
+    height: 90vh !important;
+}
+
+.input-new-request{
+}
+
+
+
+
+
+
+/* Tabela com os Pedidos realizados */
+.table-pedidos{
+    width: 100%;
+    height: 100%;
+    font-size: 15pt;
+}
+
+.table-pedidos thead{
+    justify-content: space-between;
+    color: grey;
+}
+
+.table-pedidos tbody{
+    font-weight: 300;
+}
+
+.table-pedidos tbody tr{
+    transition: transform .3s ease, color .1s ease;
+}
+
+.table-pedidos tbody tr:hover{
+    cursor: pointer;
+    background: rgb(243, 243, 243);
+    transform: scale(1.005);
+}
+
+.table-pedidos tbody th{
+    font-weight: 600;
+}
